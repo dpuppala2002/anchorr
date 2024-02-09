@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Discussion Forum</h1>
+
+        <div>
+            <h2>Create Account & Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="createAccount()">Create Account</button>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div>
+            <h2>Post a Discussion</h2>
+            <textarea id="postContent" placeholder="Type your post here"></textarea>
+            <button onclick="postDiscussion()">Post</button>
+        </div>
+
+        <div id="posts">
+            <!-- Display posts here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
